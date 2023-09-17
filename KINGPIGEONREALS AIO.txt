@@ -629,7 +629,7 @@ local Button = MainTab:CreateButton({
 })
 
 local GUISTab = Window:CreateTab("GUIS", nil) -- Title, Image
-local GUISSection = MainTab:CreateSection("GUIS")
+local GUISSection = GUISTab:CreateSection("GUIS")
 
 local Button = GUISTab:CreateButton({
    Name = "Blade Ball GUI",
@@ -652,7 +652,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/Name
    end,
 })
 
-local Button = MainTab:CreateButton({
+local Button = GUISTab:CreateButton({
    Name = "Chat Bypasser",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/wspo23e/SDL-Roblox-ChatBypasser/main/SDL-NoFilterV2.5"))()
