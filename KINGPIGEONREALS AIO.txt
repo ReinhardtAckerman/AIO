@@ -628,20 +628,6 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local Button = MainTab:CreateButton({
-   Name = "Chat Bypasser",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/wspo23e/SDL-Roblox-ChatBypasser/main/SDL-NoFilterV2.5"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Nameless Admin",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
-   end,
-})
-
 local GUISTab = Window:CreateTab("GUIS", nil) -- Title, Image
 local GUISSection = MainTab:CreateSection("GUIS")
 
@@ -649,5 +635,26 @@ local Button = GUISTab:CreateButton({
    Name = "Blade Ball GUI",
    Callback = function()
 loadstring(game:HttpGet("https://github.com/SadlekAski/Scripts/raw/main/Blade%20Ball/Equip%20any%20ability.lua"))()
+   end,
+})
+
+local Button = GUISTab:CreateButton({
+   Name = "Fling Things And People GUI",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BlizTBr/scripts/main/FTAP.lua"))()
+   end,
+})
+
+local Button = GUISTab:CreateButton({
+   Name = "Nameless Admin",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Chat Bypasser",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wspo23e/SDL-Roblox-ChatBypasser/main/SDL-NoFilterV2.5"))()
    end,
 })
